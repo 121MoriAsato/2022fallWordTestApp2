@@ -4,10 +4,18 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
+interface SaveAsFavorite{
+    fun buttonTapped()
+}
+
 class RecyclerAdapter:RecyclerView.Adapter<ViewHolderItem>() {
 
-    val nameList = mutableListOf("動詞","名詞","形容詞")
-    val allOfCorrectList= mutableListOf("72/102","9/45","46/58")
+    val nameList = listOf("動詞","名詞","形容詞")
+    val allOfCorrectList= listOf("72/102","9/45","46/58")
+
+//    val imageList = listOf(
+//        R.drawable.cake_image,R.drawable.cat_image,
+//    )
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderItem {
 
@@ -19,12 +27,7 @@ class RecyclerAdapter:RecyclerView.Adapter<ViewHolderItem>() {
     override fun onBindViewHolder(holder: ViewHolderItem, position: Int) {
         holder.groupNameViewHolder.text = nameList[position]
         holder.allOfCorrectwordViewHolder.text = allOfCorrectList[position]
-        holder.allWordButtonHolder.setOnClickListener {
-            
-        }
-        holder.favoriteButtonHolder.setOnClickListener {
-
-        }
+        holder.favoriteButtonHolder.setBackgroundResource(R.drawable.after_change_button)
     }
 
     override fun getItemCount(): Int {
