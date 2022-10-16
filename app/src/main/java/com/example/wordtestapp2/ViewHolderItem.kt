@@ -22,8 +22,8 @@ class ViewHolderItem(itemView:View):RecyclerView.ViewHolder(itemView) {
             //実験用：Toast.makeText(itemView.context,namelist[position], Toast.LENGTH_SHORT).show()
         }
 
-        itemView.setOnLongClickListener {
-            //intentでそのグループに追加してる単語の一覧を表示
-        }
+//        itemView.setOnLongClickListener {
+//            //intentでそのグループに追加してる単語の一覧を表示
+//        }
     }
 }

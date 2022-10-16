@@ -123,9 +123,12 @@ class WrodAddActivity : AppCompatActivity() {
 //        Snackbar.make(container, "保存しました", Snackbar.LENGTH_SHORT).show()
 //    }
 
-        fun onDestroy() {
+
+
+}
+
+    override fun onDestroy() {
         super.onDestroy()
         realm.close()
     }
-
-}}
+}
