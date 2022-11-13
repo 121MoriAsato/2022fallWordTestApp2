@@ -6,79 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/goal_time_parcentage"
-        android:layout_width="160sp"
-        android:layout_height="160sp"
-        android:layout_marginTop="13dp"
-        android:gravity="center"
-        android:text="後でプログレスバーに"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="81dp"
-        android:layout_marginTop="22dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/goal_time_parcentage"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:layout_marginBottom="13dp"
-        android:text="目標時間"
-        app:layout_constraintBottom_toTopOf="@+id/goal_time_parcentage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.243"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <Button
         android:id="@+id/add_word_button"
-        android:layout_width="128dp"
-        android:layout_height="64dp"
+        android:layout_width="131dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="192dp"
         android:text="単語を追加"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/deleted_word_button"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/deleted_word_button"
-        android:layout_width="128dp"
-        android:layout_height="64dp"
-        android:layout_marginEnd="15dp"
-        android:text="消した単語"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        android:text="　"
-        app:cornerRadius="125dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="81dp"
-        android:layout_marginTop="104dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/goal_time_parcentage"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
