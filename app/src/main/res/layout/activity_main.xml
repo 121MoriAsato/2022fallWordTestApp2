@@ -24,9 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="81dp"
         android:layout_marginTop="22dp"
-        android:layout_marginBottom="83dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/rv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/goal_time_parcentage"
@@ -72,15 +70,6 @@
         app:cornerRadius="125dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv"
-        android:layout_width="409dp"
-        android:layout_height="393dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/goal_time_parcentage" />
 
     <TextView
         android:id="@+id/textView"
