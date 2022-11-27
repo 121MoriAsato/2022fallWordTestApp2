@@ -29,7 +29,11 @@ MainActivity : AppCompatActivity() {
 //            Addword.setBackgroundTintList(ColorStateList.valueOf(Color.YELLOW));
         }
 
-        recyclerView = findViewById(R.id.rv)
+        binding.listButton.setOnClickListener {
+
+        }
+
+      //  recyclerView = findViewById(R.id.rv)
         recyclerView.adapter = RecyclerAdapter()
         recyclerView.layoutManager = LinearLayoutManager(this)
 
