@@ -13,7 +13,8 @@ MainActivity : AppCompatActivity() {
 
     private lateinit var binding:ActivityMainBinding
 
-    lateinit var recyclerView: RecyclerView
+    //lateinit var recyclerView: RecyclerView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,12 +31,13 @@ MainActivity : AppCompatActivity() {
         }
 
         binding.listButton.setOnClickListener {
-
+            val toWordListActivityIntent = Intent(this,WordListActvity::class.java)
+            startActivity(toWordListActivityIntent)
         }
 
       //  recyclerView = findViewById(R.id.rv)
-        recyclerView.adapter = RecyclerAdapter()
-        recyclerView.layoutManager = LinearLayoutManager(this)
+      //  recyclerView.adapter = RecyclerAdapter()
+      //  recyclerView.layoutManager = LinearLayoutManager(this)
 
     }
 }

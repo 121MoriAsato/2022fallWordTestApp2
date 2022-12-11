@@ -10,8 +10,6 @@ interface SaveAsFavorite{
 
 class RecyclerAdapter:RecyclerView.Adapter<ViewHolderItem>() {
 
-    val nameList = listOf("動詞","名詞","形容詞")
-    val allOfCorrectList= listOf("72/102","9/45","46/58")
 
 //    val imageList = listOf(
 //        R.drawable.cake_image,R.drawable.cat_image,
@@ -20,7 +18,7 @@ class RecyclerAdapter:RecyclerView.Adapter<ViewHolderItem>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderItem {
 
         val itemXml = LayoutInflater.from(parent.context)
-            .inflate(R.layout.question_list_layout,parent,false)
+            .inflate(R.layout.word_list_layout,parent,false)
         return ViewHolderItem(itemXml)
     }
 
